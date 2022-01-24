@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    tools:context=".UserSide.Dashboard_User">
+
+    <!--    Layout Background -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/yellow_background">
+    </RelativeLayout>
+
+    <!--    Konten -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="100dp"
+            android:background="@color/white"
+            android:padding="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/centurygothicreguler"
+                android:text="Aplikasi Electrilumny merupakan aplikasi buatan mahasiswa Teknik Elektro Universitas Muhammadiyah Malang dengan tujuan untuk menyatukan para alumni Teknik elektro Universitas Muhammadiiyah Malang yang tersebar di seluruh Indonesia. \n\n Untuk mengethui informasi lebih lanjut, pilih menu pada navigation bar dibawah"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/centurygothicreguler"
+                android:text=
+                    "Kamu Masuk Sebagai : Alumni\n\nKamu Wisuda Pada : "
+                android:textAlignment="gravity"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--    Bottom Navigation-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/yellow_background"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_admin"
+        app:itemIconTint="@drawable/selector"/>
+</RelativeLayout>
