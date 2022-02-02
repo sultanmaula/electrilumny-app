@@ -10,7 +10,7 @@ Merupakan aplikasi berbasis android yang ditujukan untuk alumni mahasiswa teknik
 ### 2. HALAMAN ADMIN
 
       A. Halaman Dashboard Admin
-
+      ![Alt text](https://user-images.githubusercontent.com/30024353/152184868-30ad0fe8-cbac-4bac-b97a-bb3e2e53a1a8.PNG?raw=true "Halaman Dashboard Admin")
 
       B. Halaman Data Alumni - Admin
 
