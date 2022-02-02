@@ -35,7 +35,7 @@ import java.util.Map;
 public class RegisterActivity extends AppCompatActivity  {
 
     Button btn_AksesLogin, btn_Register;
-    EditText etNamaLengkap, etEmail, etPassword, etPasswordReenter, etRole;
+    EditText etNamaLengkap, etEmail, etPassword, etPasswordReenter, etTahunAngkatan, etJenisPendidikan;
     //Spinner spinRole;
     RadioGroup rbRole;
     RadioButton roleTerpilih;
@@ -51,7 +51,8 @@ public class RegisterActivity extends AppCompatActivity  {
         etEmail = findViewById(R.id.et_email);
         etPassword = findViewById(R.id.et_password);
         etPasswordReenter = findViewById(R.id.et_passwordReenter);
-        //etRole = findViewById(R.id.role);
+        etTahunAngkatan = findViewById(R.id.et_thAngkatan);
+        etJenisPendidikan = findViewById(R.id.et_jenisPendidikan);
 
         //inisialisasi Button
         btn_AksesLogin = findViewById(R.id.btnAksesLogin);
@@ -59,6 +60,7 @@ public class RegisterActivity extends AppCompatActivity  {
 
         //inisialisasi RadioButton
         rbRole = findViewById(R.id.rbRole);
+        //rbJenisPendidikan = findViewById(R.id.rbJenisPendidikan);
 
 
         //inisialisasi Progress Dialog
@@ -86,13 +88,15 @@ public class RegisterActivity extends AppCompatActivity  {
                 roleTerpilih = findViewById(role_terpilih);
                 String role = roleTerpilih.getText().toString();
 
+                String th_angkatan = etTahunAngkatan.getText().toString();
+                String jenis_pendidikan = etJenisPendidikan.getText().toString();
 
-
-                //String role = spinRole.getItemAtPosition(this).toString();
-
+//                int jenisPendidikan_terpilih = rbJenisPendidikan.getCheckedRadioButtonId();
+//                jenisPendidikanTerpilih = findViewById(jenisPendidikan_terpilih);
+//                String jenis_pendidikan = jenisPendidikanTerpilih.getText().toString();
 
                 if (password.equals(confPassword) && !password.equals("")){
-                    CreateDataToServer(nama_lengkap, email, password, role);
+                    CreateDataToServer(nama_lengkap, email, password, role, th_angkatan, jenis_pendidikan);
                     Intent loginIntent = new Intent(RegisterActivity.this, MainActivity.class);
                     startActivity(loginIntent);
                 } else{
@@ -103,7 +107,7 @@ public class RegisterActivity extends AppCompatActivity  {
         });
     }
 
-    public void CreateDataToServer(final String nama_lengkap, final String email, final String password, final String role){
+    public void CreateDataToServer(final String nama_lengkap, final String email, final String password, final String role, final String th_angkatan, final String jenis_pendidikan){
         if (checkNetworkConnection()){
             progressDialog.show();
             StringRequest stringRequest = new StringRequest(Request.Method.POST, DbContact.SERVER_REGISTER_URL,
@@ -136,6 +140,8 @@ public class RegisterActivity extends AppCompatActivity  {
                     params.put("email", email);
                     params.put("password", password);
                     params.put("role", role);
+                    params.put("th_angkatan", th_angkatan);
+                    params.put("jenis_pendidikan", jenis_pendidikan);
                     return params;
                 }
             };
@@ -148,9 +154,9 @@ public class RegisterActivity extends AppCompatActivity  {
                     progressDialog.cancel();
                 }
             }, 2000);
-        } else {
-            Toast.makeText(getApplicationContext(), "Tidak ada Koneksi Internet", Toast.LENGTH_SHORT).show();
-        }
+            } else {
+                Toast.makeText(getApplicationContext(), "Tidak ada Koneksi Internet", Toast.LENGTH_SHORT).show();
+            }
     }
 
     public boolean checkNetworkConnection(){

@@ -14,6 +14,7 @@
         <entry key="..\:/KULIAH/Semester 7/MOBILE/CODE/electrilumnyy/app/src/main/res/layout/activity_dashboard_user.xml" value="0.2" />
         <entry key="..\:/KULIAH/Semester 7/MOBILE/CODE/electrilumnyy/app/src/main/res/layout/activity_data_alumni_admin.xml" value="0.25416666666666665" />
         <entry key="..\:/KULIAH/Semester 7/MOBILE/CODE/electrilumnyy/app/src/main/res/layout/activity_event_admin.xml" value="0.25416666666666665" />
+        <entry key="..\:/KULIAH/Semester 7/MOBILE/CODE/electrilumnyy/app/src/main/res/layout/activity_event_tambah_page.xml" value="0.25416666666666665" />
         <entry key="..\:/KULIAH/Semester 7/MOBILE/CODE/electrilumnyy/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/KULIAH/Semester 7/MOBILE/CODE/electrilumnyy/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
         <entry key="..\:/KULIAH/Semester 7/MOBILE/CODE/electrilumnyy/app/src/main/res/layout/activity_register.xml" value="0.2" />
@@ -27,6 +28,8 @@
         <entry key="..\:/KULIAH/Semester 7/MOBILE/CODE/electrilumnyy/app/src/main/res/layout/admin_setting_fragment.xml" value="0.25416666666666665" />
         <entry key="..\:/KULIAH/Semester 7/MOBILE/CODE/electrilumnyy/app/src/main/res/layout/fragment_notifications.xml" value="0.253125" />
         <entry key="..\:/KULIAH/Semester 7/MOBILE/CODE/electrilumnyy/app/src/main/res/layout/fragment_notifications_admin.xml" value="0.253125" />
+        <entry key="..\:/KULIAH/Semester 7/MOBILE/CODE/electrilumnyy/app/src/main/res/layout/list_data_admin.xml" value="0.25416666666666665" />
+        <entry key="..\:/KULIAH/Semester 7/MOBILE/CODE/electrilumnyy/app/src/main/res/layout/list_data_event.xml" value="0.25416666666666665" />
         <entry key="..\:/KULIAH/Semester 7/MOBILE/CODE/electrilumnyy/app/src/main/res/menu/bottom_nav_admin.xml" value="0.25416666666666665" />
         <entry key="..\:/KULIAH/Semester 7/MOBILE/CODE/electrilumnyy/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/KULIAH/Semester 7/MOBILE/CODE/electrilumnyy/app/src/main/res/menu/bottom_nav_user.xml" value="0.25416666666666665" />

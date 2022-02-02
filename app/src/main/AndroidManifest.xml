@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Electrilumnyy"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".AdminSide.Event_TambahPage"
+            android:exported="false" />
+        <activity
             android:name=".UserSide.User_Setting"
             android:exported="false" />
         <activity
@@ -39,10 +42,6 @@
             android:name=".AdminSide.Dashboard_Admin"
             android:exported="false"
             android:label="@string/title_activity_dashboard_admin" />
-        <activity
-            android:name=".User_Dashboard"
-            android:exported="false"
-            android:label="@string/title_activity_user_dashboard" />
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
