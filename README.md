@@ -45,6 +45,6 @@ Merupakan aplikasi berbasis android yang ditujukan untuk alumni mahasiswa teknik
 ![db_user](https://user-images.githubusercontent.com/30024353/152186706-ad29762a-a800-48a1-a040-504e60cb9734.PNG)
 
 # Contributors
-<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo = GitHub_username/repository_name"/>
+<a href = "https://github.com/sultanmaula/electrilumny-app/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=sultanmaula/electrilumny-app"/>
 </a>
